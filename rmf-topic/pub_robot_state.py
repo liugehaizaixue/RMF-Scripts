@@ -15,7 +15,7 @@ def main(args=None):
     _seq = 1
 
     _mode = RobotMode()
-    _mode.mode = RobotMode.MODE_ADAPTER_ERROR
+    _mode.mode = 6
 
     _battery_percent = 75.0
 
@@ -35,7 +35,7 @@ def main(args=None):
       location = _location,
       task_id = _task_id,
       path = [],
-      mode = _mode.mode,
+      mode = _mode,
       seq = _seq,
     )
 
