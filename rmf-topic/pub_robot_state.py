@@ -12,7 +12,7 @@ def main(args=None):
     _robot_name = 'tinyRobot_1'
     _model = 'MyRobotModel'
     _task_id = '123'
-    _seq = 001
+    _seq = 1
 
     _mode = RobotMode()
     _mode.mode = RobotMode.MODE_ADAPTER_ERROR
