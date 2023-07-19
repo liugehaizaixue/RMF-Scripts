@@ -6,7 +6,7 @@ payload = {
   "type": "undo_phase_skip_request",
   "for_task": "compose.dispatch-0",
   "for_tokens": [
-    "0","1"
+    "0"
   ],
   "labels": [
     "string"
@@ -19,5 +19,5 @@ headers = {
 
 response = requests.post(url, data=json.dumps(payload), headers=headers)
 
-print(response)
+print(response.text)
 

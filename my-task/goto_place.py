@@ -14,13 +14,13 @@ json = {
 						"activities": [{
 							"category": "go_to_place",
 							"description": {
-								"waypoint": "l1_10",
+								"waypoint": "charger3",
 								"orientation": 0
 							}
 						}, {
 							"category": "wait_for",
 							"description": {
-								"duration": 10000
+								"duration": 1000
 							}
 						}]
 					}
@@ -33,17 +33,29 @@ json = {
 						"activities": [{
 							"category": "go_to_place",
 							"description": {
-								"waypoint": "l1_12",
+								"waypoint": "charger4",
 								"orientation": 0
 							}
 						}, {
 							"category": "wait_for",
 							"description": {
-								"duration": 10000
+								"duration": 1000
 							}
 						}]
 					}
-				}
+				},
+                "on_cancel":[{
+						"category": "sequence",
+						"description": {
+							"activities": [{
+								"category": "go_to_place",
+								"description": {
+									"waypoint": "charger1",
+									"orientation": 0
+								}
+							}]
+						}
+				}]
 			}
             ,{
 				"activity": {
@@ -52,13 +64,13 @@ json = {
 						"activities": [{
 							"category": "go_to_place",
 							"description": {
-								"waypoint": "l1_16",
+								"waypoint": "charger5",
 								"orientation": 0
 							}
 						}, {
 							"category": "wait_for",
 							"description": {
-								"duration": 10000
+								"duration": 1000
 							}
 						}]
 					}
@@ -66,7 +78,7 @@ json = {
 			}
             ]
 		},
-		"unix_millis_earliest_start_time": 1681456523071,
+		"unix_millis_earliest_start_time": 0,
 		"priority": {
 			"type": "binary",
 			"value": 0
