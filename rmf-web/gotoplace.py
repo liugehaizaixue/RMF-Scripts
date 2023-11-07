@@ -15,7 +15,7 @@ json = {
 						"activities": [{
 							"category": "go_to_place",
 							"description": {
-								"waypoint": "l2_2",
+								"waypoint": "l1_2",
 								"orientation": 0
 							}
 						}, {
@@ -28,7 +28,7 @@ json = {
 				}
 			}]
 		},
-		"unix_millis_earliest_start_time": 1681456523071,
+		"unix_millis_earliest_start_time": 0,
 		"priority": {
 			"type": "binary",
 			"value": 0
@@ -36,6 +36,5 @@ json = {
 	}
 }
 res = requests.post(url=url, json = json)
- 
-print("发送的body:",res.request.body)
-print("response返回结果：",res.text)
+
+print("返回的任务id为： "+res.json()["state"]["booking"]["id"])
