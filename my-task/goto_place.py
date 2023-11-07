@@ -10,8 +10,7 @@ json = {
 			"phases": [{
 				"activity": {
 					"category": "sequence",
-					"description": {
-						"activities": [{
+					"description": [{
 							"category": "go_to_place",
 							"description": {
 								"waypoint": "charger3",
@@ -23,7 +22,6 @@ json = {
 								"duration": 1000
 							}
 						}]
-					}
 				}
 			}
             ,{
@@ -56,25 +54,6 @@ json = {
 							}]
 						}
 				}]
-			}
-            ,{
-				"activity": {
-					"category": "sequence",
-					"description": {
-						"activities": [{
-							"category": "go_to_place",
-							"description": {
-								"waypoint": "charger5",
-								"orientation": 0
-							}
-						}, {
-							"category": "wait_for",
-							"description": {
-								"duration": 1000
-							}
-						}]
-					}
-				}
 			}
             ]
 		},
