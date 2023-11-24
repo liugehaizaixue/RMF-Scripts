@@ -5,7 +5,7 @@ url = "http://127.0.0.1:8000/tasks/robot_task"
 json = {
 	"type": "robot_task_request",
     "fleet":"tinyRobot",
-    "robot":"tinyRobot1",
+    "robot":"tinyRobot2",
 	"request": {
 		"category": "compose",
 		"description": {
@@ -17,20 +17,20 @@ json = {
 						"activities": [{
 							"category": "go_to_place",
 							"description": {
-								"waypoint": "l2_2",
+								"waypoint": "l1_2",
 								"orientation": 0
 							}
 						}, {
 							"category": "wait_for",
 							"description": {
-								"duration": 500000
+								"duration": 5000
 							}
 						}]
 					}
 				}
 			}]
 		},
-		"unix_millis_earliest_start_time": 1681456523071,
+		"unix_millis_earliest_start_time": 0,
 		"priority": {
 			"type": "binary",
 			"value": 0

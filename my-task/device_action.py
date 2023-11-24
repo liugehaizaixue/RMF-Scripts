@@ -1,5 +1,17 @@
 import requests
+import json
+
 url = "http://127.0.0.1:8000/tasks/dispatch_task"
+
+device_id = "mechanical_arm_1"
+param_json = {
+    "action":"grab",
+    "param":{
+        "x":1.1,
+        "y":1.3,
+        "z":2.1
+	}
+}
 
 json = {
 	"type": "dispatch_task_request",
@@ -13,14 +25,14 @@ json = {
 					"description": [{
 							"category": "go_to_place",
 							"description": {
-								"waypoint": "charger2",
+								"waypoint": "l1_6",
 								"orientation": 0
 							}
 						}, {
 							"category": "device_action",
 							"description": {
-								"device_id": "test_device_id",
-                                "param_json_str":"test_param_json_str"
+								"device_id": device_id,
+                                "param_json_str":json.dumps(param_json)
 							}
 						}]
 				}
