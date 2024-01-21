@@ -3,14 +3,9 @@ import json
 
 url = "http://127.0.0.1:8000/tasks/dispatch_task"
 
-device_id = "mechanical_arm_1"
+device_id = "transferRobot"
 param_json = {
-    "action":"grab",
-    "param":{
-        "x":1.1,
-        "y":1.3,
-        "z":2.1
-	}
+    "action":"lock"
 }
 
 json = {
@@ -25,7 +20,7 @@ json = {
 					"description": [{
 							"category": "go_to_place",
 							"description": {
-								"waypoint": "l1_6",
+								"waypoint": "l1_2",
 								"orientation": 0
 							}
 						}, {
